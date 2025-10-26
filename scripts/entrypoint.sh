@@ -70,7 +70,7 @@ fi
 
 CRYPTOMATOR_LISTEN_IP='127.0.0.1'
 CRYPTOMATOR_LISTEN_PORT='8080'
-CRYPTOMATOR_INTERNAL_MAX_WAIT_TIME=5
+CRYPTOMATOR_INTERNAL_MAX_WAIT_TIME=30
 
 # Start cryptomator-cli listening on localhost
 echo "Starting cryptomator-cli in background, will share on: webdav://${CRYPTOMATOR_LISTEN_IP}:${CRYPTOMATOR_LISTEN_PORT}/vault/"
