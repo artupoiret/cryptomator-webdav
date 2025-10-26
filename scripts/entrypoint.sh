@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 # shellcheck disable=SC1072,SC2120,SC2059
+CRYPTOMATOR_DEBUG=0
 
 # Define steps to clean up container parts when exiting
 cleanup() {
