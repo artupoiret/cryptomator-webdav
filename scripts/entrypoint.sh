@@ -105,7 +105,7 @@ cryptomator_vault_ready=0
 echo -n "Waiting for cryptomator-cli to begin..."
 # Keep checking if the port is available until the maximum wait time is reached
 while [ $((elapsed_time <= CRYPTOMATOR_INTERNAL_MAX_WAIT_TIME)) -eq 1 ] && [ $cryptomator_port_ready -eq 0 ]; do
-    nc -n -z -w 1 "$CRYPTOMATOR_LISTEN_IP" "$CRYPTOMATOR_LISTEN_PORT"  >/dev/null 2>&1
+    nc -n -z -w 1 "$CRYPTOMATOR_LISTEN_IP" "$CRYPTOMATOR_LISTEN_PORT" # >/dev/null 2>&1
     ret=$?
     echo -n "."
     if [ $ret -eq 0 ]; then
